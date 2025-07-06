@@ -10,21 +10,28 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Landing & Blog Platform",
-    template: "%s | Landing & Blog Platform",
+    default: "Secure Pre-TGE Token Trading with Escrow Protection",
+    template: "%s | PreTGE",
   },
-  description: "A modern landing page with integrated blog functionality",
+  description:
+    "A secure and transparent platform for Pre-TGE token trading with escrow protection. Ensuring safe transactions between buyers and sellers before token listing.",
   generator: "Next.js",
-  applicationName: "Landing & Blog Platform",
-  authors: [{ name: "n8nviet" }],
+  applicationName: "PreTGE Landing & Blog Platform",
+  authors: [{ name: "PreTGE Team" }],
   keywords: [
-    "business automation",
-    "tự động hóa",
-    "giải pháp kinh doanh",
-    "blog",
+    "pre-TGE",
+    "token trading",
+    "escrow",
+    "secure trading",
+    "blockchain",
+    "crypto",
+    "escrow protection",
+    "PreTGE",
+    "safe token trading",
+    "decentralized trading",
   ],
-  creator: "n8nviet",
-  publisher: "n8nviet",
+  creator: "PreTGE Team",
+  publisher: "PreTGE",
   formatDetection: {
     email: false,
     address: false,
@@ -50,21 +57,27 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
+    title: "Secure Pre-TGE Token Trading with Escrow Protection",
+    description:
+      "A secure and transparent platform for Pre-TGE token trading with escrow protection.",
     images: [
       {
         url: "/thumnails.png",
         width: 1200,
         height: 630,
-        alt: "n8nViet Thumbnail",
+        alt: "PreTGE Escrow Token Trading Thumbnail",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "Secure Pre-TGE Token Trading with Escrow Protection",
+    description:
+      "A secure and transparent platform for Pre-TGE token trading with escrow protection.",
     images: [
       {
         url: "/thumnails.png",
-        alt: "n8nViet Thumbnail",
+        alt: "PreTGE Escrow Token Trading Thumbnail",
       },
     ],
   },
