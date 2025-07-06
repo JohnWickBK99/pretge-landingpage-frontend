@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "solution": "Solusi",
+    "testimonial": "Ulasan",
+    "compare": "Bandingkan",
+    "faq": "FAQ"
+  },
+  "buttons": {
+    "buy_coin": "Beli Koin",
+    "sell_coin": "Jual Koin",
+    "start_trading": "Mulai Berdagang",
+    "explore_features": "Jelajahi Fitur",
+    "see_pricing": "Lihat Harga",
+    "launch_with_pre_tge": "Luncurkan dengan Pre-TGE",
+    "explore_how_it_works": "Jelajahi Cara Kerjanya"
+  },
+  "hero": {
+    "badge": "Platform Pra-Pasar Peringkat #1",
+    "title": "Perdagangan Token Pra-TGE yang Aman dengan Perlindungan Escrow",
+    "subtitle": "Kontrak pintar otomatis kami memastikan setiap transaksi aman, lancar, dan hemat biaya.",
+    "reviews": "dari 13k+ ulasan"
+  },
+  "features": {
+    "section_title": "Solusi",
+    "title": "Platform Perdagangan yang Dirancang untuk Kesederhanaan dan Kekuatan",
+    "subtitle": "Dibangun berdasarkan umpan balik pengguna dan data transaksi, Pre-TGE memecahkan tantangan perdagangan inti dengan antarmuka yang kuat dan intuitif.",
+    "seller_title": "Untuk Penjual",
+    "seller_desc": "Toolkit komprehensif untuk membuat daftar dalam hitungan detik, mengelola etalase Anda, dan melacak kinerja penjualan dengan analitik terperinci.",
+    "seller_sub_desc": "Baik di perangkat seluler, tablet, atau desktop, Pre-TGE terlihat cepat dan terasa tajam. Dibangun dengan pengalaman mulus yang langsung siap digunakan.",
+    "buyer_title": "Untuk Pembeli",
+    "buyer_desc": "Temukan dan beli token dengan satu klik. Kelola portofolio Anda dan lacak aset dengan mudah dari dasbor pribadi Anda, dengan keamanan transaksi yang terjamin.",
+    "buyer_sub_desc": "Luncurkan dalam hitungan menit, bukan minggu. Semuanya sudah diatur agar Anda tidak kehilangan momentum.",
+    "security_title": "Keamanan Unggul, Biaya Minimal",
+    "security_desc": "Platform kami menggabungkan keamanan yang kuat melalui kontrak pintar otomatis dengan biaya hingga 10x lebih rendah dari pesaing. Berdagang dengan percaya diri dan simpan lebih banyak keuntungan Anda.",
+    "security_sub_desc": "Platform kami diuji dengan ratusan pedagang untuk memastikan keamanan dan efisiensi biaya maksimum."
+  },
+  "testimonials": {
+    "section_title": "Ulasan",
+    "title": "Dipercaya oleh Pedagang Global",
+    "reviews_summary": "dari 200+ ulasan",
+    "items": [
+      {
+        "text": "Ini benar-benar produk perdagangan paling sederhana dan paling intuitif yang pernah saya gunakan. Saya mencantumkan token saya dalam waktu kurang dari dua menit. Benar-benar brilian.",
+        "author": "Alex R.",
+        "role": "Investor Awal"
+      },
+      {
+        "text": "Keamanan adalah segalanya bagi saya. Mengetahui bahwa transaksi besar saya diamankan oleh kontrak escrow otomatis, aman dari pencurian atau penipuan, memberi saya ketenangan pikiran sepenuhnya.",
+        "author": "Sarah K.",
+        "role": "Pedagang DeFi"
+      },
+      {
+        "text": "Biaya adalah pengubah permainan. Saya menghemat jumlah yang signifikan pada setiap perdagangan dibandingkan dengan platform OTC lainnya. Rasanya ini dibangun untuk pengguna sebenarnya.",
+        "author": "Mike T.",
+        "role": "Anggota Komunitas Kripto"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Keuntungan Pre-TGE",
+    "subtitle": "Lihat mengapa para pedagang memilih Pre-TGE daripada platform tradisional. Perbandingan yang jelas tentang biaya, keamanan, dan kinerja.",
+    "other_platforms": "Platform Lain",
+    "other_desc": "Meja P2P dan OTC manual tradisional.",
+    "fee_other": "Biaya: 5% - 10% atau lebih tinggi",
+    "how_other": "Mekanisme: Perantara manual atau kesepakatan P2P",
+    "perf_other": "Kecepatan: Lambat, memerlukan konfirmasi manual",
+    "custom_other": "Alat Penjual: Formulir daftar dasar",
+    "exp_other": "Pengalaman Pembeli: Antarmuka yang kikuk, pelacakan manual",
+    "platform_pre_tge": "Pre-TGE",
+    "pre_tge_desc": "Standar modern untuk perdagangan Pra-TGE yang aman dan efisien.",
+    "fee_pre_tge": "Biaya: 0,5% - 1% (Hingga 10x lebih murah)",
+    "how_pre_tge": "Mekanisme: Kontrak Cerdas Otomatis",
+    "perf_pre_tge": "Kecepatan: Pencocokan & penyelesaian instan",
+    "custom_pre_tge": "Alat Penjual: Kontrol Etalase Penuh",
+    "exp_pre_tge": "Pengalaman Pembeli: Beli 1-Klik & Manajemen Portofolio"
+  },
+  "faq": {
+    "section_title": "Pertanyaan yang Sering Diajukan",
+    "title": "Pertanyaan yang Mungkin Anda Ajukan",
+    "subtitle": "Jika Anda sudah sampai sejauh ini, Anda mungkin sangat tertarik, atau memiliki pertanyaan. Berikut adalah pertanyaan yang paling sering diajukan tentang perdagangan Pre-TGE.",
+    "items": [
+      {
+        "question": "Apa itu perdagangan token Pre-TGE dan bagaimana cara kerjanya?",
+        "answer": "Perdagangan token Pre-TGE memungkinkan Anda untuk membeli dan menjual token proyek sebelum Token Generation Event (TGE) resmi dan daftar bursa publik. Ini memberikan kesempatan bagi investor awal untuk merealisasikan keuntungan dan pendatang baru kesempatan untuk berpartisipasi dalam proyek yang mungkin mereka lewatkan selama penawaran awal. Platform kami menggunakan kontrak pintar untuk memastikan transaksi yang aman."
+      },
+      {
+        "question": "Bagaimana kontrak pintar escrow melindungi dana saya?",
+        "answer": "Kontrak pintar escrow otomatis kami menahan token penjual dan pembayaran pembeli dalam sistem yang transparan dan terdesentralisasi. Aset hanya dilepaskan ketika kedua belah pihak memenuhi kewajiban mereka, sepenuhnya menghilangkan risiko penipuan atau pencurian. Kontrak pintar diaudit dan beroperasi tanpa campur tangan manusia."
+      },
+      {
+        "question": "Berapa biaya perdagangan di platform Pre-TGE?",
+        "answer": "Kami menawarkan biaya paling kompetitif di pasar hanya 0,5% - 1% per transaksi - hingga 10 kali lebih murah daripada platform OTC tradisional. Tidak ada biaya tersembunyi, biaya pengaturan, atau biaya tambahan. Anda hanya membayar ketika Anda berhasil menyelesaikan perdagangan."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Mulai Berdagang Token Pra-TGE Hari Ini",
+    "subtitle": "Bergabunglah dengan ribuan pedagang yang memanfaatkan peluang awal. Berdagang dengan percaya diri di platform Pra-TGE yang paling aman dan efisien di pasar.",
+    "free_text": "Gratis untuk memulai • Tanpa biaya penyiapan • Biaya perdagangan terendah di pasar"
+  },
+  "footer": {
+    "description": "Platform terkemuka untuk perdagangan token Pra-TGE yang aman dan berbiaya rendah.",
+    "copyright": "Hak Cipta © 2025 Pre-TGE. Semua hak dilindungi undang-undang."
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "solution": "Solution",
+    "testimonial": "Testimonial",
+    "compare": "Compare",
+    "faq": "FAQ"
+  },
+  "buttons": {
+    "buy_coin": "Buy Coin",
+    "sell_coin": "Sell Coin",
+    "start_trading": "Start Trading",
+    "explore_features": "Explore Features",
+    "see_pricing": "See Pricing",
+    "launch_with_pre_tge": "Launch With Pre-TGE",
+    "explore_how_it_works": "Explore How It Works"
+  },
+  "hero": {
+    "badge": "Rank #1 Pre-Market Platform",
+    "title": "Secure Pre-TGE Token Trading with Escrow Protection",
+    "subtitle": "Our automated smart contract ensures every transaction is safe, seamless, and cost-effective.",
+    "reviews": "from 13k+ reviews"
+  },
+  "features": {
+    "section_title": "The Solution",
+    "title": "A Trading Platform Designed for Simplicity and Power",
+    "subtitle": "Built on user feedback and transaction data, Pre-TGE solves core trading challenges with a powerful, intuitive interface.",
+    "seller_title": "For Sellers",
+    "seller_desc": "A comprehensive toolkit to create listings in seconds, manage your storefront, and track sales performance with detailed analytics.",
+    "seller_sub_desc": "Whether it's mobile, tablet, or desktop, Pre-TGE looks fast and feels crisp. Built with a seamless experience delivered right out of the box.",
+    "buyer_title": "For Buyers",
+    "buyer_desc": "Discover and purchase tokens with a single click. Manage your portfolio and track assets effortlessly from your personal dashboard, with guaranteed transaction security.",
+    "buyer_sub_desc": "Launch in minutes, not weeks. Everything is set up so you don't lose momentum.",
+    "security_title": "Superior Security, Minimal Fees",
+    "security_desc": "Our platform combines robust security via automated smart contracts with fees up to 10x lower than competitors. Trade confidently and keep more of your profits.",
+    "security_sub_desc": "Our platform was tested with hundreds of traders to ensure maximum security and cost efficiency."
+  },
+  "testimonials": {
+    "section_title": "The Results",
+    "title": "What Do Clients Think?",
+    "reviews_summary": "from 200+ reviews",
+    "items": [
+      {
+        "text": "This is genuinely the simplest and most intuitive trading product I've ever used. I listed my tokens in under two minutes. Absolutely brilliant.",
+        "author": "Alex R.",
+        "role": "Early Investor"
+      },
+      {
+        "text": "Security is everything for me. Knowing that my large transactions are secured by an automated escrow contract, safe from theft or fraud, gives me complete peace of mind.",
+        "author": "Sarah K.",
+        "role": "DeFi Trader"
+      },
+      {
+        "text": "The fees are a game-changer. I'm saving a significant amount on every trade compared to other OTC platforms. It feels like this was built for actual users.",
+        "author": "Mike T.",
+        "role": "Crypto Community Member"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "A Clearer, Fairer Choice",
+    "subtitle": "See how Pre-TGE compares to traditional OTC platforms and why thousands choose us for their pre-TGE trading needs.",
+    "other_platforms": "Other Platforms",
+    "other_desc": "Traditional P2P or manual OTC platforms.",
+    "fee_other": "Fee: 5% - 10% or more",
+    "how_other": "How it works: Manual middleman or P2P deals",
+    "perf_other": "Performance: Slow, requires manual confirmation",
+    "custom_other": "Seller Customization: Basic listing forms",
+    "exp_other": "Buyer Experience: Clunky interface, manual tracking",
+    "platform_pre_tge": "Pre-TGE",
+    "pre_tge_desc": "The next-generation platform for secure and efficient pre-TGE trading.",
+    "fee_pre_tge": "Fee: 0.5% - 1% (Up to 10x cheaper)",
+    "how_pre_tge": "How it works: Automated Escrow Smart Contract",
+    "perf_pre_tge": "Performance: Instant matching & settlement",
+    "custom_pre_tge": "Seller Customization: Full Storefront Control",
+    "exp_pre_tge": "Buyer Experience: 1-Click Buy & Portfolio Management",
+    "start_button": "Start with Pre-TGE",
+    "unavailable_button": "Unavailable"
+  },
+  "faq": {
+    "section_title": "FAQ",
+    "title": "Questions You're Probably Asking",
+    "subtitle": "If you've made it this far, you're either very interested, or have questions. Here are the most frequently asked questions about Pre-TGE trading.",
+    "items": [
+      {
+        "question": "What is pre-TGE token trading and how does it work?",
+        "answer": "Pre-TGE token trading allows you to buy and sell project tokens before their official Token Generation Event (TGE) and public exchange listing. This gives early investors the opportunity to realize profits and newcomers a chance to participate in projects they may have missed during the initial offering. Our platform uses smart contracts to ensure secure transactions."
+      },
+      {
+        "question": "How does the escrow smart contract protect my funds?",
+        "answer": "Our automated escrow smart contract holds both the seller's tokens and buyer's payment in a transparent, decentralized system. Assets are only released when both parties fulfill their obligations, completely eliminating the risk of fraud or theft. The smart contract is audited and operates without human intervention."
+      },
+      {
+        "question": "What are the trading fees on Pre-TGE platform?",
+        "answer": "We offer the most competitive fees in the market at just 0.5% - 1% per transaction - up to 10 times cheaper than traditional OTC platforms. There are no hidden charges, setup fees, or additional costs. You only pay when you successfully complete a trade."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Buy & Sell Tokens Before The Official TGE",
+    "subtitle": "Join the next generation of token trading. Seize opportunities and trade with confidence on the most secure and cost-effective pre-TGE platform.",
+    "free_text": "FREE to get started • No setup fees • Lowest trading fees in the market"
+  },
+  "footer": {
+    "description": "The leading platform for secure, low-cost Pre-TGE token trading.",
+    "copyright": "Copyright © 2025 Pre-TGE. All rights reserved."
+  }
+}

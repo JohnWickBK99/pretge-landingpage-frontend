@@ -9,6 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "latest",
+    "negotiator": "latest",
     "@hookform/resolvers": "^3.9.1",
     "@prisma/client": "^6.11.1",
     "@radix-ui/react-accordion": "latest",
