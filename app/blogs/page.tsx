@@ -15,21 +15,32 @@ import type { Metadata } from "next";
 import { BlogService } from "@/lib/blog-service";
 
 export const metadata: Metadata = {
-  title: "Blog - Giải Pháp Tự Động Hóa",
+  title: "Blog - Secure Pre-TGE Token Trading with Escrow Protection",
   description:
-    "Khám phá những hiểu biết sâu sắc, hướng dẫn và câu chuyện từ đội ngũ và cộng đồng của chúng tôi.",
-  keywords: ["blog", "tự động hóa", "kinh doanh", "giải pháp"],
+    "Insights, guides, and stories about secure pre-TGE token trading, escrow protection, and the Pre-TGE platform.",
+  keywords: [
+    "pre-TGE",
+    "token trading",
+    "escrow",
+    "secure trading",
+    "blockchain",
+    "crypto",
+    "PreTGE",
+    "safe token trading",
+    "decentralized trading",
+    "blog",
+  ],
   openGraph: {
-    title: "Blog - Giải Pháp Tự Động Hóa",
+    title: "Blog - Secure Pre-TGE Token Trading with Escrow Protection",
     description:
-      "Khám phá những hiểu biết sâu sắc, hướng dẫn và câu chuyện từ đội ngũ và cộng đồng của chúng tôi.",
+      "Insights, guides, and stories about secure pre-TGE token trading, escrow protection, and the Pre-TGE platform.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog - Giải Pháp Tự Động Hóa",
+    title: "Blog - Secure Pre-TGE Token Trading with Escrow Protection",
     description:
-      "Khám phá những hiểu biết sâu sắc, hướng dẫn và câu chuyện từ đội ngũ và cộng đồng của chúng tôi.",
+      "Insights, guides, and stories about secure pre-TGE token trading, escrow protection, and the Pre-TGE platform.",
   },
 };
 
@@ -58,26 +69,26 @@ export default async function BlogsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                Blog Của Chúng Tôi
+                Pre-TGE Blog
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Khám phá những hiểu biết sâu sắc, hướng dẫn và câu chuyện từ đội
-                ngũ và cộng đồng của chúng tôi.
+                Insights, guides, and stories about secure pre-TGE token
+                trading, escrow protection, and the Pre-TGE platform.
               </p>
             </div>
 
             <div className="text-center p-12 bg-white rounded-lg shadow">
               <h2 className="text-2xl font-bold mb-4 text-gray-700">
-                Chưa có bài viết nào
+                No posts yet
               </h2>
               <p className="text-gray-600 mb-6">
-                Chúng tôi đang chuẩn bị nội dung hấp dẫn. Vui lòng quay lại sau.
+                We are preparing exciting content. Please check back later.
               </p>
               <Link
                 href="/"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Quay về trang chủ
+                Back to Home
               </Link>
             </div>
           </div>
@@ -94,9 +105,9 @@ export default async function BlogsPage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Blog",
-          headline: "Blog Của Chúng Tôi",
+          headline: "Pre-TGE Blog",
           description:
-            "Khám phá những hiểu biết sâu sắc, hướng dẫn và câu chuyện từ đội ngũ và cộng đồng của chúng tôi.",
+            "Insights, guides, and stories about secure pre-TGE token trading, escrow protection, and the Pre-TGE platform.",
           url: `${baseUrl}/blogs`,
           blogPosts: posts.map((post: any) => ({
             "@type": "BlogPosting",
@@ -106,7 +117,7 @@ export default async function BlogsPage() {
               name: post.author,
             },
             datePublished: post.published_at || post.publishedAt,
-            url: `${baseUrl}/${post.slug}`,
+            url: `${baseUrl}/blogs/${post.slug}`,
             keywords: post.category,
           })),
         })}
@@ -120,7 +131,7 @@ export default async function BlogsPage() {
               <ol className="flex items-center space-x-2 text-sm">
                 <li>
                   <Link href="/" className="text-gray-500 hover:text-blue-600">
-                    Trang chủ
+                    Home
                   </Link>
                 </li>
                 <li className="text-gray-500">/</li>
@@ -130,11 +141,11 @@ export default async function BlogsPage() {
 
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                Blog Của Chúng Tôi
+                Pre-TGE Blog
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Khám phá những hiểu biết sâu sắc, hướng dẫn và câu chuyện từ đội
-                ngũ và cộng đồng của chúng tôi.
+                Insights, guides, and stories about secure pre-TGE token
+                trading, escrow protection, and the Pre-TGE platform.
               </p>
             </div>
 
@@ -155,7 +166,7 @@ export default async function BlogsPage() {
                     </div>
                     <CardTitle className="text-2xl text-gray-900">
                       <Link
-                        href={`/${post.slug}`}
+                        href={`/blogs/${post.slug}`}
                         className="hover:text-blue-600 transition-colors"
                       >
                         {post.title}
@@ -176,7 +187,7 @@ export default async function BlogsPage() {
                         <span>
                           {new Date(
                             post.published_at || post.publishedAt
-                          ).toLocaleDateString("vi-VN")}
+                          ).toLocaleDateString("en-US")}
                         </span>
                       </div>
                       <div className="flex items-center gap-1">
@@ -192,17 +203,18 @@ export default async function BlogsPage() {
             {/* Call to Action */}
             <div className="text-center mt-16 p-8 bg-white rounded-lg shadow-sm">
               <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                Muốn Tìm Hiểu Thêm?
+                Buy & Sell Tokens Before The Official TGE
               </h2>
               <p className="text-gray-600 mb-6">
-                Liên hệ với chúng tôi để được tư vấn về các giải pháp tự động
-                hóa phù hợp với doanh nghiệp của bạn.
+                Join the next generation of token trading. Seize opportunities
+                and trade with confidence on the most secure and cost-effective
+                pre-TGE platform.
               </p>
               <Link
                 href="/"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Quay về trang chủ
+                Start Trading
               </Link>
             </div>
           </div>
