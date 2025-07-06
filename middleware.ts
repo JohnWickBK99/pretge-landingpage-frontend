@@ -21,8 +21,8 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
-  // Không redirect nếu là /blogs
-  if (pathname === "/blogs") {
+  // Không redirect nếu là /blogs hoặc /blogs/[slug]
+  if (pathname === "/blogs" || pathname.startsWith("/blogs/")) {
     return
   }
 
