@@ -19,8 +19,8 @@ type Dictionary = {
   security_desc: string
   security_sub_desc: string
   buttons: {
-    explore_how_it_works: string
-    launch_with_pre_tge: string
+    sell_coin: string
+    buy_coin: string
   }
 }
 
@@ -128,16 +128,17 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
 
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
+              {dictionary.buttons.buy_coin}
+            </Button>
             <Button
               variant="outline"
               size="lg"
               className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
             >
-              {dictionary.buttons.explore_how_it_works}
+              {dictionary.buttons.sell_coin}
             </Button>
-            <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
-              {dictionary.buttons.launch_with_pre_tge}
-            </Button>
+           
           </div>
         </div>
       </div>

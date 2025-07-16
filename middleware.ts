@@ -27,13 +27,17 @@ export function middleware(request: NextRequest) {
   }
 
   const pathnameIsMissingLocale = i18n.locales.every(
+    
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   )
 
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request)
-    return NextResponse.redirect(new URL(`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url))
-  }
+    const targetLocale = i18n.defaultLocale // Always use 'en' as the default
+
+    // Redirect to the URL with the determined locale
+    return NextResponse.redirect(
+      new URL(`/${targetLocale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url),
+    )  }
 }
 
 export const config = {

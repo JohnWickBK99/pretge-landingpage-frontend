@@ -75,9 +75,14 @@ export default function Testimonials({ dictionary }: { dictionary: Dictionary })
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">{dictionary.title}</h2>
           <div className="flex items-center justify-center mb-8">
             <div className="flex -space-x-2 mr-4">
-              <div className="w-10 h-10 bg-gray-300 rounded-full border-2 border-white"></div>
-              <div className="w-10 h-10 bg-gray-400 rounded-full border-2 border-white"></div>
-              <div className="w-10 h-10 bg-gray-500 rounded-full border-2 border-white"></div>
+              {['cat','dog','fox'].map((seed, i) => (
+                <img
+                  key={i}
+                  src={`https://api.dicebear.com/9.x/adventurer/svg?seed=${seed}`}
+                  alt="Avatar"
+                  className="w-10 h-10 rounded-full border-2 border-white bg-gray-200"
+                />
+              ))}
             </div>
             <div className="flex items-center">
               <div className="flex mr-2">
@@ -108,7 +113,11 @@ export default function Testimonials({ dictionary }: { dictionary: Dictionary })
                     </div>
                     <p className="text-gray-700 mb-6 leading-relaxed flex-grow">"{testimonial.text}"</p>
                     <div className="flex items-center mt-auto">
-                      <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                      <img
+                        src={`https://api.dicebear.com/9.x/adventurer/svg?seed=${encodeURIComponent(testimonial.author || `user${index+1}`)}`}
+                        alt="Avatar"
+                        className="w-12 h-12 rounded-full mr-4 bg-gray-200 border-2 border-white"
+                      />
                       <div>
                         <div className="font-semibold text-gray-900">{testimonial.author}</div>
                         <div className="text-gray-500 text-sm">{testimonial.role}</div>
@@ -141,13 +150,13 @@ export default function Testimonials({ dictionary }: { dictionary: Dictionary })
 
         <div className="text-center mt-16">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
             >
               {dictionary.buttons.see_pricing}
-            </Button>
+            </Button> */}
             <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
               {dictionary.buttons.start_trading}
             </Button>

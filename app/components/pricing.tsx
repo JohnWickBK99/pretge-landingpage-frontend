@@ -78,6 +78,7 @@ export default function Pricing({ dictionary }: { dictionary: Dictionary }) {
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
+          <p className="text-gray-500 text-sm uppercase tracking-wider mb-4">The Comparison</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{dictionary.title}</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">{dictionary.subtitle}</p>
         </div>

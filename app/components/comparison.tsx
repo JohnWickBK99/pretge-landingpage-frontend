@@ -32,6 +32,7 @@ export default function Comparison() {
   return (
     <section id="comparison" className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
+      <p className="text-gray-500 text-sm uppercase tracking-wider mb-4">The Comparison</p>
         <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">A Clearer, Fairer Choice</h2>
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">

@@ -9,11 +9,9 @@
   "buttons": {
     "buy_coin": "Buy Coin",
     "sell_coin": "Sell Coin",
-    "start_trading": "Start Trading",
+    "start_trading": "Launch Pre-TGE",
     "explore_features": "Explore Features",
-    "see_pricing": "See Pricing",
-    "launch_with_pre_tge": "Launch With Pre-TGE",
-    "explore_how_it_works": "Explore How It Works"
+    "see_pricing": "See Pricing"
   },
   "hero": {
     "badge": "Rank #1 Pre-Market Platform",
@@ -23,7 +21,7 @@
   },
   "features": {
     "section_title": "The Solution",
-    "title": "A Trading Platform Designed for Simplicity and Power",
+    "title": "Trading Platform Designed for Simplicity & Power",
     "subtitle": "Built on user feedback and transaction data, Pre-TGE solves core trading challenges with a powerful, intuitive interface.",
     "seller_title": "For Sellers",
     "seller_desc": "A comprehensive toolkit to create listings in seconds, manage your storefront, and track sales performance with detailed analytics.",
@@ -97,7 +95,7 @@
     ]
   },
   "final_cta": {
-    "title": "Buy & Sell Tokens Before The Official TGE",
+    "title": "Buy & Sell Tokens Before Official TGE",
     "subtitle": "Join the next generation of token trading. Seize opportunities and trade with confidence on the most secure and cost-effective pre-TGE platform.",
     "free_text": "FREE to get started • No setup fees • Lowest trading fees in the market"
   },

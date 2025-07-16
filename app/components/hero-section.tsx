@@ -30,11 +30,14 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center mb-6">
           <div className="flex -space-x-2 mr-4">
-            <div className="w-10 h-10 bg-gray-300 rounded-full border-2 border-white"></div>
-            <div className="w-10 h-10 bg-gray-400 rounded-full border-2 border-white"></div>
-            <div className="w-10 h-10 bg-gray-500 rounded-full border-2 border-white"></div>
-            <div className="w-10 h-10 bg-gray-600 rounded-full border-2 border-white"></div>
-            <div className="w-10 h-10 bg-gray-700 rounded-full border-2 border-white"></div>
+            {["astronaut", "robot", "alien", "pirate", "ninja"].map((seed, i) => (
+              <img
+                key={i}
+                src={`https://api.dicebear.com/9.x/adventurer/svg?seed=${seed}`}
+                alt="Avatar"
+                className="w-10 h-10 rounded-full border-2 border-white bg-gray-200"
+              />
+            ))}
           </div>
           <div className="flex items-center">
             <div className="flex mr-2">
@@ -56,13 +59,13 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
         <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">{dictionary.subtitle}</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
+          {/* <Button
             variant="outline"
             size="lg"
             className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
           >
             {dictionary.buttons.explore_features}
-          </Button>
+          </Button> */}
           <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
             {dictionary.buttons.start_trading}
           </Button>
