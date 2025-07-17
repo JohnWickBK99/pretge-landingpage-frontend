@@ -48,13 +48,21 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
   return (
     <section
       id="features-section"
-      className={`py-20 px-4 bg-transparent transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      className={`py-20 px-4 bg-transparent transition-all duration-700 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-gray-500 text-sm uppercase tracking-wider mb-4">{dictionary.section_title}</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{dictionary.title}</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{dictionary.subtitle}</p>
+          <p className="text-gray-500 text-sm uppercase tracking-wider mb-4">
+            {dictionary.section_title}
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            {dictionary.title}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            {dictionary.subtitle}
+          </p>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
@@ -73,10 +81,16 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
           <div className="flex-1">
             <div className="flex items-center mb-4">
               <BarChart3 className="w-8 h-8 text-gray-900 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">{dictionary.seller_title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900">
+                {dictionary.seller_title}
+              </h3>
             </div>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">{dictionary.seller_desc}</p>
-            <p className="text-sm text-gray-500">{dictionary.seller_sub_desc}</p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              {dictionary.seller_desc}
+            </p>
+            <p className="text-sm text-gray-500">
+              {dictionary.seller_sub_desc}
+            </p>
           </div>
         </div>
 
@@ -96,9 +110,13 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
           <div className="flex-1">
             <div className="flex items-center mb-4">
               <ShoppingCart className="w-8 h-8 text-gray-900 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">{dictionary.buyer_title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900">
+                {dictionary.buyer_title}
+              </h3>
             </div>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">{dictionary.buyer_desc}</p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              {dictionary.buyer_desc}
+            </p>
             <p className="text-sm text-gray-500">{dictionary.buyer_sub_desc}</p>
           </div>
         </div>
@@ -119,29 +137,43 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
           <div className="flex-1">
             <div className="flex items-center mb-4">
               <Shield className="w-8 h-8 text-gray-900 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">{dictionary.security_title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900">
+                {dictionary.security_title}
+              </h3>
             </div>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">{dictionary.security_desc}</p>
-            <p className="text-sm text-gray-500">{dictionary.security_sub_desc}</p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              {dictionary.security_desc}
+            </p>
+            <p className="text-sm text-gray-500">
+              {dictionary.security_sub_desc}
+            </p>
           </div>
         </div>
 
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
+            <Button
+              onClick={() =>
+                window.open("https://app.pretgemarket.xyz", "_blank")
+              }
+              size="lg"
+              className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white"
+            >
               {dictionary.buttons.buy_coin}
             </Button>
             <Button
+              onClick={() =>
+                window.open("https://seller.pretgemarket.xyz", "_blank")
+              }
               variant="outline"
               size="lg"
               className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
             >
               {dictionary.buttons.sell_coin}
             </Button>
-           
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
