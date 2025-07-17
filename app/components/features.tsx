@@ -146,7 +146,7 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
             <p className="text-gray-600 text-lg leading-relaxed mb-6 text-center">
               {dictionary.security_desc}
             </p>
-            <p className="text-sm text-gray-500 w-1/2 mx-auto">
+            <p className="text-sm text-gray-500 w-1/2 mx-auto text-center">
               {dictionary.security_sub_desc}
             </p>
             <div className="text-center mt-8">
