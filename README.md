@@ -1,30 +1,182 @@
-# n8nvietfrontend1
+# PreTGE Marketplace - Landing Page Frontend
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+🚀 **Secure Pre-TGE Token Trading Platform**
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/duys-projects-472d9ba7/v0-n8nvietfrontend)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/cErhDcA9bN7)
+A modern, responsive landing page for PreTGE Marketplace - the leading secure platform for Pre-TGE token trading with escrow protection.
 
-## Overview
+## 🌟 Features
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- ⚡ **Next.js 14** with App Router
+- 🎨 **Modern UI/UX** with Tailwind CSS
+- 🌍 **Multilingual Support** (EN, VI, ID, ZH)
+- 📱 **Fully Responsive** design
+- 🔒 **SEO Optimized** with structured data
+- 🛡️ **Security-first** approach
+- 📊 **Analytics Ready** (Google Analytics)
+- 🔍 **Search Engine Optimized**
 
-## Deployment
+## 🛠️ Tech Stack
 
-Your project is live at:
+- **Framework:** Next.js 14
+- **Styling:** Tailwind CSS + Shadcn/UI
+- **Typography:** Custom Cocomat Pro font
+- **Icons:** Lucide React
+- **Database:** Prisma (for blog functionality)
+- **Deployment:** Vercel
 
-**[https://vercel.com/duys-projects-472d9ba7/v0-n8nvietfrontend](https://vercel.com/duys-projects-472d9ba7/v0-n8nvietfrontend)**
+## 🚀 Quick Start
 
-## Build your app
+```bash
+# Clone the repository
+git clone https://github.com/pretge-marketplace/pretge-landingpage-frontend.git
 
-Continue building your app on:
+# Install dependencies
+npm install
+# or
+pnpm install
 
-**[https://v0.dev/chat/projects/cErhDcA9bN7](https://v0.dev/chat/projects/cErhDcA9bN7)**
+# Set up environment variables
+cp .env.example .env.local
 
-## How It Works
+# Run development server
+npm run dev
+# or
+pnpm dev
+```
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## 📁 Project Structure
+
+```
+pretge-landingpage-frontend/
+├── app/                    # Next.js 14 App Router
+│   ├── [lang]/            # Multilingual routes
+│   ├── api/               # API routes
+│   ├── blogs/             # Blog pages
+│   └── layout.tsx         # Root layout
+├── components/            # Reusable components
+│   ├── ui/                # Shadcn/UI components
+│   └── layouts/           # Layout components
+├── lib/                   # Utilities and services
+├── public/                # Static assets
+└── dictionaries/          # Translation files
+```
+
+## 🌐 Multilingual Support
+
+The site supports 4 languages:
+- 🇺🇸 English (`/en`)
+- 🇻🇳 Vietnamese (`/vi`)
+- 🇮🇩 Indonesian (`/id`)
+- 🇨🇳 Chinese (`/zh`)
+
+## 📈 SEO Features
+
+- ✅ Complete metadata optimization
+- ✅ Open Graph & Twitter Cards
+- ✅ Structured data (Schema.org)
+- ✅ XML sitemap with multilingual support
+- ✅ Optimized robots.txt
+- ✅ Security headers
+- ✅ Performance optimizations
+
+## 🔧 Environment Variables
+
+Create a `.env.local` file:
+
+```bash
+# Site Configuration
+NEXT_PUBLIC_BASE_URL=https://pretgemarket.xyz
+
+# Analytics
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+
+# Database (optional for blog)
+DATABASE_URL=your_database_url
+```
+
+## 📊 Analytics & Tracking
+
+- Google Analytics 4 integration
+- Performance monitoring
+- User behavior tracking
+- Conversion tracking ready
+
+## 🛡️ Security
+
+- CSP headers implementation
+- XSS protection
+- CSRF protection
+- Secure cookie handling
+- Input validation
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+```bash
+# Deploy to Vercel
+vercel --prod
+```
+
+### Manual Deployment
+
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+## 📝 Development
+
+### Code Style
+
+```bash
+# Format code
+npm run format
+
+# Lint code
+npm run lint
+```
+
+### Database (for blog functionality)
+
+```bash
+# Generate Prisma client
+npx prisma generate
+
+# Run migrations
+npx prisma migrate dev
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+- 📧 Email: support@pretgemarket.xyz
+- 💬 Telegram: @pretgemarketplace
+- 🐦 Twitter: @PreTGEMarket
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Vercel for hosting and deployment
+- Tailwind CSS for styling utilities
+- Shadcn for beautiful UI components
+
+---
+
+**⚡ PreTGE Marketplace - Secure Pre-TGE Token Trading Platform**

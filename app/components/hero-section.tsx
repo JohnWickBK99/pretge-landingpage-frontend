@@ -52,9 +52,9 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
           </div>
         </div> */}
 
-        {/* <Badge variant="secondary" className="mb-8 bg-gray-200 text-gray-700 hover:bg-gray-200">
+        <Badge variant="secondary" className="my-8 bg-gray-200 text-gray-700 hover:bg-gray-200">
           {dictionary.badge}
-        </Badge> */}
+        </Badge>
 
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           {dictionary.title}

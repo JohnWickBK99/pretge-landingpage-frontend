@@ -31,7 +31,7 @@ export async function generateMetadata({
     };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const baseUrl = "https://pretgemarket.xyz";
 
   return {
     title: post.title,
@@ -71,7 +71,7 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const baseUrl = "https://pretgemarket.xyz";
   const canonicalUrl = `${baseUrl}/${post.slug}`;
 
   return (

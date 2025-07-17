@@ -97,7 +97,7 @@ export default async function BlogsPage() {
     );
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const baseUrl = "https://pretgemarket.xyz";
 
   return (
     <>
