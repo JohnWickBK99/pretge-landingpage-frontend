@@ -89,7 +89,7 @@ export default function Pricing({ dictionary }: { dictionary: Dictionary }) {
               key={index}
               className={`w-full lg:w-1/2 p-8 flex flex-col justify-between rounded-3xl transition-all duration-300 ${
                 plan.isFeatured
-                  ? "bg-[#0f172a]/80 backdrop-blur-xl text-white shadow-2xl z-10 lg:-ml-8 lg:-translate-y-4 border border-white/10"
+                  ? "bg-[#000]/90 backdrop-blur-xl text-white shadow-2xl z-10 lg:-ml-8 lg:-translate-y-4 border border-white/10"
                   : "bg-white/60 backdrop-blur-xl text-gray-900 border border-gray-200/50 shadow-lg z-0"
               }`}
               style={{ minHeight: "480px" }}

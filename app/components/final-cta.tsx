@@ -42,10 +42,11 @@ export default function FinalCTA({ dictionary }: { dictionary: Dictionary }) {
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">{dictionary.subtitle}</p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
-          <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-xl">
+          <Button onClick={() => window.open("https://app.pretgemarket.xyz", "_blank")} size="lg" className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-xl">
             {dictionary.buttons.buy_coin}
           </Button>
           <Button
+            onClick={() => window.open("https://seller.pretgemarket.xyz", "_blank")}
             size="lg"
             variant="outline"
             className="border-black text-black hover:bg-gray-100 px-12 py-4 text-xl bg-transparent"

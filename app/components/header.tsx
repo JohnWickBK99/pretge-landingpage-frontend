@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useEffect, useState } from "react"
+import type React from "react";
+import { useEffect, useState } from "react";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import LanguageSwitcher from "./language-switcher"
-import type { Locale } from "@/i18n-config"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "./language-switcher";
+import type { Locale } from "@/i18n-config";
 
 export default function Header({
   lang,
@@ -137,13 +137,14 @@ export default function Header({
   return (
     <header className="sticky top-0 z-50 w-full py-4 px-4 bg-gray-50/80 backdrop-blur-lg border-b border-gray-200/50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Image
-          src="/images/pre-tge-logo.png"
-          alt="Pre-TGE Logo"
-          width={150}
-          height={40}
-        />
-
+        <div className="flex items-center space-x-4 w-[256px]">
+          <Image
+            src="/images/pre-tge-logo.png"
+            alt="Pre-TGE Logo"
+            width={150}
+            height={40}
+          />
+        </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a
             href="#features-section"
@@ -152,13 +153,13 @@ export default function Header({
           >
             {dictionary.nav.solution}
           </a>
-          <a
+          {/* <a
             href="#testimonials-section"
             onClick={(e) => handleScrollToSection(e, "testimonials-section")}
             className={getLinkClasses("testimonials-section")}
           >
             {dictionary.nav.testimonial}
-          </a>
+          </a> */}
           <a
             href="#pricing-section"
             onClick={(e) => handleScrollToSection(e, "pricing-section")}

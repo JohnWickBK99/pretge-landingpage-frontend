@@ -25,10 +25,12 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
 
   return (
     <section
-      className={`py-16 px-4 bg-transparent transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      className={`py-16 px-4 bg-transparent transition-all duration-700 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
     >
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="flex items-center justify-center mb-6">
+      <div className="max-w-4xl mx-auto text-center ">
+        {/* <div className="flex items-center justify-center mb-6">
           <div className="flex -space-x-2 mr-4">
             {["astronaut", "robot", "alien", "pirate", "ninja"].map((seed, i) => (
               <img
@@ -48,29 +50,42 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
             <span className="text-sm font-semibold mr-1">5.0</span>
             <span className="text-sm text-gray-600">{dictionary.reviews}</span>
           </div>
-        </div>
+        </div> */}
 
-        <Badge variant="secondary" className="mb-8 bg-gray-200 text-gray-700 hover:bg-gray-200">
+        {/* <Badge variant="secondary" className="mb-8 bg-gray-200 text-gray-700 hover:bg-gray-200">
           {dictionary.badge}
-        </Badge>
+        </Badge> */}
 
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">{dictionary.title}</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          {dictionary.title}
+        </h1>
 
-        <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">{dictionary.subtitle}</p>
+        <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+          {dictionary.subtitle}
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           {/* <Button
+            onClick={() => {
+              window.open("https://app.tradingview.com/chart/1726525120000/1726525120000", "_blank")
+            }}
             variant="outline"
             size="lg"
             className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
           >
             {dictionary.buttons.explore_features}
           </Button> */}
-          <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
+          <Button
+            onClick={() =>
+              window.open("https://seller.pretgemarket.xyz", "_blank")
+            }
+            size="lg"
+            className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white"
+          >
             {dictionary.buttons.start_trading}
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -67,13 +67,14 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
 
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
           <div className="flex-1">
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-8 shadow-lg border border-gray-200/50">
-              <div className="w-full h-64 rounded-lg relative overflow-hidden">
+            <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-4 shadow-lg border border-gray-200/50">
+              <div className="w-full h-64 rounded-lg flex items-center justify-center">
                 <Image
                   src="/images/seller-illustration.png"
                   alt="Hand-drawn illustration of a seller dashboard"
-                  fill
-                  className="object-contain p-4"
+                  className="object-contain p-4 rounded-lg border border-gray-200/50"
+                  width={512}
+                  height={512}
                 />
               </div>
             </div>
@@ -96,13 +97,14 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
 
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-20">
           <div className="flex-1">
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-8 shadow-lg border border-gray-200/50">
-              <div className="w-full h-64 rounded-lg relative overflow-hidden">
+            <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-4 shadow-lg border border-gray-200/50">
+              <div className="w-full h-64 rounded-lg relative overflow-hidden flex items-center justify-center">
                 <Image
                   src="/images/buyer-illustration.png"
                   alt="Hand-drawn illustration of a buyer marketplace"
-                  fill
-                  className="object-contain p-4"
+                  width={512}
+                  height={512}
+                  className="object-contain p-4 rounded-lg border border-gray-200/50"
                 />
               </div>
             </div>
@@ -121,8 +123,8 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
-          <div className="flex-1">
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-12">
+          {/* <div className="flex-1">
             <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-8 shadow-lg border border-gray-200/50">
               <div className="w-full h-64 rounded-lg relative overflow-hidden">
                 <Image
@@ -133,44 +135,43 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
                 />
               </div>
             </div>
-          </div>
-          <div className="flex-1">
+          </div> */}
+          <div className="flex-1 flex flex-col items-center justify-center bg-white/60 backdrop-blur-xl rounded-2xl p-8 shadow-lg border border-gray-200/50">
             <div className="flex items-center mb-4">
               <Shield className="w-8 h-8 text-gray-900 mr-3" />
               <h3 className="text-2xl font-bold text-gray-900">
                 {dictionary.security_title}
               </h3>
             </div>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            <p className="text-gray-600 text-lg leading-relaxed mb-6 text-center">
               {dictionary.security_desc}
             </p>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 w-1/2 mx-auto">
               {dictionary.security_sub_desc}
             </p>
-          </div>
-        </div>
-
-        <div className="text-center">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={() =>
-                window.open("https://app.pretgemarket.xyz", "_blank")
-              }
-              size="lg"
-              className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white"
-            >
-              {dictionary.buttons.buy_coin}
-            </Button>
-            <Button
-              onClick={() =>
-                window.open("https://seller.pretgemarket.xyz", "_blank")
-              }
-              variant="outline"
-              size="lg"
-              className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
-            >
-              {dictionary.buttons.sell_coin}
-            </Button>
+            <div className="text-center mt-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button
+                  onClick={() =>
+                    window.open("https://app.pretgemarket.xyz", "_blank")
+                  }
+                  size="lg"
+                  className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white"
+                >
+                  {dictionary.buttons.buy_coin}
+                </Button>
+                <Button
+                  onClick={() =>
+                    window.open("https://seller.pretgemarket.xyz", "_blank")
+                  }
+                  variant="outline"
+                  size="lg"
+                  className="px-8 py-3 text-lg border-gray-300 text-gray-700 hover:bg-gray-100 bg-transparent"
+                >
+                  {dictionary.buttons.sell_coin}
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

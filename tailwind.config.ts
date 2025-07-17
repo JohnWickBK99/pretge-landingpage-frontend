@@ -85,11 +85,29 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
+  			},
+  			'scroll-left': {
+  				'0%': {
+  					transform: 'translateX(0%)'
+  				},
+  				'100%': {
+  					transform: 'translateX(-100%)'
+  				}
+  			},
+  			'scroll-right': {
+  				'0%': {
+  					transform: 'translateX(-100%)'
+  				},
+  				'100%': {
+  					transform: 'translateX(0%)'
+  				}
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'scroll-left-to-right': 'scroll-right 30s linear infinite',
+  			'scroll-right-to-left': 'scroll-left 30s linear infinite'
   		}
   	}
   },

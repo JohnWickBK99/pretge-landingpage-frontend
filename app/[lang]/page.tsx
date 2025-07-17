@@ -23,7 +23,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           <HeroSection dictionary={{ ...dictionary.hero, buttons: dictionary.buttons }} />
           <SocialProof />
           <Features dictionary={{ ...dictionary.features, buttons: dictionary.buttons }} />
-          <Testimonials dictionary={{ ...dictionary.testimonials, buttons: dictionary.buttons }} />
+          {/* <Testimonials dictionary={{ ...dictionary.testimonials, buttons: dictionary.buttons }} /> */}
           <Pricing dictionary={dictionary.pricing} />
           <FAQ dictionary={dictionary.faq} />
           <FinalCTA dictionary={{ ...dictionary.final_cta, buttons: dictionary.buttons }} />

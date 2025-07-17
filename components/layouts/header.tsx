@@ -52,13 +52,13 @@ export default function Header() {
               Blog
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
-            <Link
+            {/* <Link
               href="#testimonials"
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
             >
               Khách hàng
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Desktop CTA Buttons */}
@@ -125,13 +125,13 @@ export default function Header() {
                     >
                       <span className="font-medium">Blog & Tin tức</span>
                     </Link>
-                    <Link
+                    {/* <Link
                       href="#testimonials"
                       className="flex items-center py-3 px-4 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                       onClick={() => setIsOpen(false)}
                     >
                       <span className="font-medium">Khách hàng nói gì</span>
-                    </Link>
+                    </Link> */}
                   </div>
                 </nav>
 

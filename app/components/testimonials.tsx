@@ -157,7 +157,7 @@ export default function Testimonials({ dictionary }: { dictionary: Dictionary })
             >
               {dictionary.buttons.see_pricing}
             </Button> */}
-            <Button size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
+            <Button onClick={() => window.open("https://app.pretgemarket.xyz", "_blank")} size="lg" className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white">
               {dictionary.buttons.start_trading}
             </Button>
           </div>
