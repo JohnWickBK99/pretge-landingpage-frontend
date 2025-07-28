@@ -26,8 +26,8 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Không tìm thấy bài viết",
-      description: "Bài viết này không tồn tại hoặc đã bị xóa",
+      title: "Post Not Found",
+      description: "This post does not exist or has been deleted",
     };
   }
 
@@ -35,7 +35,7 @@ export async function generateMetadata({
 
   return {
     title: post.title,
-    description: post.excerpt || `Đọc bài viết ${post.title} của chúng tôi`,
+    description: post.excerpt || `Read our post ${post.title}`,
     authors: [{ name: post.author }],
     keywords: [post.category || "", "blog", "kinh doanh", "tự động hóa"],
     openGraph: {
@@ -88,7 +88,7 @@ export default async function BlogPostPage({
           datePublished: post.published_at,
           dateModified: post.updated_at || post.published_at,
           description:
-            post.excerpt || `Đọc bài viết ${post.title} của chúng tôi`,
+            post.excerpt || `Read our post ${post.title}`,
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": canonicalUrl,
@@ -154,7 +154,7 @@ export default async function BlogPostPage({
                 <div className="flex items-center gap-2">
                   <CalendarDays className="h-4 w-4" />
                   <span>
-                    {new Date(post.published_at).toLocaleDateString("vi-VN")}
+                    {new Date(post.published_at).toLocaleDateString("en-US")}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -179,7 +179,7 @@ export default async function BlogPostPage({
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Xem thêm bài viết khác
+                See more posts
               </Link>
             </div>
           </div>

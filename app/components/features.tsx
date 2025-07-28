@@ -68,11 +68,11 @@ export default function Features({ dictionary }: { dictionary: Dictionary }) {
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
           <div className="flex-1">
             <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-4 shadow-lg border border-gray-200/50">
-              <div className="w-full h-64 rounded-lg flex items-center justify-center">
+              <div className="w-full h-64 rounded-lg flex items-center justify-center overflow-hidden">
                 <Image
                   src="/images/seller-illustration.png"
                   alt="Hand-drawn illustration of a seller dashboard"
-                  className="object-contain p-4 rounded-lg border border-gray-200/50"
+                  className="object-cover p-4 rounded-lg border border-gray-200/50"
                   width={512}
                   height={512}
                 />

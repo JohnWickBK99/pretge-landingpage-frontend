@@ -19,7 +19,6 @@ export default function LanguageSwitcher({ lang }: { lang: Locale }) {
 
   const languageNames: Record<Locale, string> = {
     en: "English",
-    vi: "Tiếng Việt",
     zh: "中文",
     id: "Bahasa Indonesia",
   }

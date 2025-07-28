@@ -180,10 +180,11 @@ export default function Header({
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button className="bg-black hover:bg-gray-800 text-white">
+          <Button onClick={() => window.open("https://app.pretgemarket.xyz", "_blank")} className="bg-black hover:bg-gray-800 text-white">
             {dictionary.buttons.buy_coin}
           </Button>
           <Button
+            onClick={() => window.open("https://seller.pretgemarket.xyz", "_blank")}
             variant="outline"
             className="border-black text-black hover:bg-gray-100 bg-transparent"
           >

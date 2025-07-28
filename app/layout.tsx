@@ -146,7 +146,6 @@ export const metadata: Metadata = {
     canonical: "https://pretgemarket.xyz",
     languages: {
       "en-US": "/en",
-      "vi-VN": "/vi", 
       "id-ID": "/id",
       "zh-CN": "/zh",
     },
