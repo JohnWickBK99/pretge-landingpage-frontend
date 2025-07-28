@@ -77,7 +77,7 @@ export default function HeroSection({ dictionary }: { dictionary: Dictionary }) 
           </Button> */}
           <Button
             onClick={() =>
-              window.open("https://seller.pretgemarket.xyz", "_blank")
+              window.open("https://app.pretgemarket.xyz", "_blank")
             }
             size="lg"
             className="px-8 py-3 text-lg bg-black hover:bg-gray-800 text-white"
