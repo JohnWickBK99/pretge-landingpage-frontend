@@ -41,7 +41,7 @@ Tạo file `.env.local` với các biến sau:
 # SEO Configuration
 NEXT_PUBLIC_BASE_URL=https://pretgemarket.xyz
 # Analytics
-NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 ```
 
 ## 📊 Keywords Strategy Đã Tối Ưu
@@ -98,7 +98,7 @@ NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 # Cấu hình GA4
 1. Tạo GA4 property
 2. Lấy Measurement ID (G-XXXXXXXXXX)
-3. Thêm vào NEXT_PUBLIC_GA_ID
+3. Thêm vào NEXT_PUBLIC_GA_MEASUREMENT_ID
 4. Setup conversion tracking
 ```
 

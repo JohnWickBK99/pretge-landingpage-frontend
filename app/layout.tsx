@@ -285,7 +285,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main>{children}</main>
         {/* Google Analytics */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
